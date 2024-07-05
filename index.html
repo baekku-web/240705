@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin:0; padding:0; box-sizing: border-box;}
+        #layout {max-width: 900px; margin: auto; border:3px solid grey;}
+
+        h1 {text-align: center;}
+        h2 {color: black;}
+
+        header {background-color: skyblue; padding:10px; display:flex; text-align: center;}
+        #logo  {flex:1; border: 2px solid navy;}
+        nav    {flex:2; border: 2px solid navy; display: flex; justify-content: space-around;}
+
+        nav a  {background-color: ivory; padding:5px 10px;}
+        nav a:hover {background: ivory; font-weight: bold; transform: scale(1.2);}      
+
+        main {display: flex; height:70vh;background-color: ivory;}
+        section {border:1px solid grey; flex:1; transition:0.7s;}  
+        section div {height: 33.33%; border: 1px solid grey; display: flex; justify-content: center; align-items: center;}
+        section div:hover {font-weight: bold; transform: scale(1.2);}
+        #red:hover {background-color: red;}
+        #black:hover {background-color: black;} 
+        #skyblue:hover {background-color: skyblue;}    
+
+        footer {background-color: skyblue; padding:8px; display:flex; text-align: center;}
+        footer p {flex:1; border:1px dashed black;}
+
+    </style>
+</head>
+<body>
+    <h1>규민이는 무엇을 좋아할까?</h1>
+    <div id="layout">
+        <header>
+            <a href="#" id="logo">규민이에 대해 알아봅시다</a>
+            <nav>
+                <a href="#">색깔</a>
+                <a href="#">게임</a>
+                <a href="#">음식</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+             <div id="red">
+                <h2>빨간색</h2>
+             </div>
+             <div id="black">
+                <h2>검은색</h2>
+             </div>
+             <div id="skyblue">
+                <h2>하늘색</h2>
+             </div>
+            </section>
+            <section>
+                <div>
+                   <a href="https://play.google.com/store/apps/details?id=com.roblox.client&hl=ko&gl=KR"><h2>로블록스</h2></a>
+                </div>
+                <div>
+                    <a href="https://play.google.com/store/search?q=%EB%B8%8C%EB%A1%A4%EC%8A%A4%ED%83%80%EC%A6%88&c=apps"><h2>브롤스타즈</h2></a>
+                </div>
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=com.soccer.score.star"><h2>축구게임</h2></a>
+                </div>
+               </section>
+               <section>
+                <div>
+                   <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%B0%A9%EC%9A%B8%ED%86%A0%EB%A7%88%ED%86%A0"><h2>방울토마토</h2></a>
+                </div>
+                <div>
+                   <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%ED%94%BC%EC%9E%90"><h2>피자</h2></a>
+                </div>
+                <div>
+                   <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%B9%98%ED%82%A8"><h2>치킨</h2></a>
+                </div>
+               </section>
+        </main>
+        <footer>
+            <p>규민이가 좋아하는 것을 선택해보세요!</p>
+        </footer>
+    </div> 
+</body>
+</html>
